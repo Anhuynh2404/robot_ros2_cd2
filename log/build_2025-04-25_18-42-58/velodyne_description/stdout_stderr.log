@@ -1,0 +1,39 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/an/ros2_ws/build/velodyne_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/launch/example.launch.py
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/rviz/example.rviz
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/world/example.world
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/velodyne_description.dsv
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/path.sh
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/path.dsv
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.bash
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.sh
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.zsh
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.dsv
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/package.dsv
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake
+-- Symlinking: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/package.xml

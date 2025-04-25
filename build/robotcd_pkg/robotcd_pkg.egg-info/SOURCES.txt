@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+launch/my_robot_world.launch.py
+models/model.sdf
+resource/robotcd_pkg
+robotcd_pkg/__init__.py
+robotcd_pkg.egg-info/PKG-INFO
+robotcd_pkg.egg-info/SOURCES.txt
+robotcd_pkg.egg-info/dependency_links.txt
+robotcd_pkg.egg-info/entry_points.txt
+robotcd_pkg.egg-info/requires.txt
+robotcd_pkg.egg-info/top_level.txt
+robotcd_pkg.egg-info/zip-safe
+worlds/house.world

@@ -1,0 +1,557 @@
+[0.000000] (-) TimerEvent: {}
+[0.000936] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.001074] (velodyne_description) JobQueued: {'identifier': 'velodyne_description', 'dependencies': OrderedDict()}
+[0.001145] (velodyne_gazebo_plugins) JobQueued: {'identifier': 'velodyne_gazebo_plugins', 'dependencies': OrderedDict()}
+[0.001209] (velodyne_simulator) JobQueued: {'identifier': 'velodyne_simulator', 'dependencies': OrderedDict([('velodyne_description', '/home/an/ros2_ws/install/velodyne_description'), ('velodyne_gazebo_plugins', '/home/an/ros2_ws/install/velodyne_gazebo_plugins')])}
+[0.002944] (velodyne_description) JobStarted: {'identifier': 'velodyne_description'}
+[0.017512] (velodyne_gazebo_plugins) JobStarted: {'identifier': 'velodyne_gazebo_plugins'}
+[0.027569] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.040552] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'cmake'}
+[0.042824] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '/home/an/ros2_ws/src/velodyne_simulator/velodyne_description', '-DCMAKE_INSTALL_PREFIX=/home/an/ros2_ws/install/velodyne_description'], 'cwd': '/home/an/ros2_ws/build/velodyne_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.050465] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'cmake'}
+[0.053963] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/an/ros2_ws/src/velodyne_simulator/velodyne_gazebo_plugins', '-DCMAKE_INSTALL_PREFIX=/home/an/ros2_ws/install/velodyne_gazebo_plugins'], 'cwd': '/home/an/ros2_ws/build/velodyne_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_gazebo_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062719] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.064880] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/an/ros2_ws/src/mobile-3d-lidar-sim/my_bot', '-DCMAKE_INSTALL_PREFIX=/home/an/ros2_ws/install/my_bot'], 'cwd': '/home/an/ros2_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/my_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099243] (-) TimerEvent: {}
+[0.199971] (-) TimerEvent: {}
+[0.223435] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.228267] (velodyne_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.232781] (my_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300174] (-) TimerEvent: {}
+[0.387817] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.389110] (velodyne_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.400379] (-) TimerEvent: {}
+[0.401012] (my_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.408560] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.410106] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.424375] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500606] (-) TimerEvent: {}
+[0.595853] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.597381] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.600742] (-) TimerEvent: {}
+[0.616257] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.616858] (velodyne_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.617242] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.618212] (velodyne_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.618578] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.619277] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.620299] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.625751] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.628163] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.636541] (my_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.637158] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.638126] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.645780] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.700980] (-) TimerEvent: {}
+[0.801596] (-) TimerEvent: {}
+[0.846535] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.847080] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.866526] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.867018] (velodyne_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.867311] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.867546] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.868327] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.868992] (velodyne_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.871125] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.873735] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.876000] (velodyne_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.896952] (my_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.897579] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.898713] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.901719] (-) TimerEvent: {}
+[0.904085] (my_bot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.001886] (-) TimerEvent: {}
+[1.102349] (-) TimerEvent: {}
+[1.202907] (-) TimerEvent: {}
+[1.251421] (velodyne_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.275878] (my_bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.276420] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.303080] (-) TimerEvent: {}
+[1.403707] (-) TimerEvent: {}
+[1.504336] (-) TimerEvent: {}
+[1.511465] (my_bot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.515478] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[1.532081] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.543280] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.578764] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.604521] (-) TimerEvent: {}
+[1.652599] (velodyne_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.660004] (velodyne_description) StdoutLine: {'line': b'-- Generating done\n'}
+[1.666447] (velodyne_description) StdoutLine: {'line': b'-- Build files have been written to: /home/an/ros2_ws/build/velodyne_description\n'}
+[1.673799] (velodyne_description) CommandEnded: {'returncode': 0}
+[1.675163] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'build'}
+[1.678053] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/an/ros2_ws/build/velodyne_description', '--', '-j12', '-l12'], 'cwd': '/home/an/ros2_ws/build/velodyne_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.704737] (-) TimerEvent: {}
+[1.711377] (my_bot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.719063] (my_bot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.720688] (my_bot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.722045] (my_bot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.726207] (my_bot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.729395] (my_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.737921] (my_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[1.742578] (my_bot) StdoutLine: {'line': b'-- Build files have been written to: /home/an/ros2_ws/build/my_bot\n'}
+[1.752321] (my_bot) CommandEnded: {'returncode': 0}
+[1.753478] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[1.755373] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/an/ros2_ws/build/my_bot', '--', '-j12', '-l12'], 'cwd': '/home/an/ros2_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/my_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.777210] (velodyne_description) CommandEnded: {'returncode': 0}
+[1.779437] (velodyne_description) JobProgress: {'identifier': 'velodyne_description', 'progress': 'install'}
+[1.801647] (velodyne_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/an/ros2_ws/build/velodyne_description'], 'cwd': '/home/an/ros2_ws/build/velodyne_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.804878] (-) TimerEvent: {}
+[1.820200] (velodyne_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.820707] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/launch\n'}
+[1.820980] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/launch/example.launch.py\n'}
+[1.821709] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes\n'}
+[1.822002] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[1.823002] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[1.824000] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.stl\n'}
+[1.824899] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.dae\n'}
+[1.825482] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_scan.stl\n'}
+[1.826026] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[1.827397] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_base.dae\n'}
+[1.828563] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[1.830200] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[1.832192] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[1.833212] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/rviz\n'}
+[1.833703] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/rviz/example.rviz\n'}
+[1.834016] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf\n'}
+[1.834289] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[1.834781] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf/example.urdf.xacro\n'}
+[1.835182] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[1.835672] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/world\n'}
+[1.836030] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/world/example.world\n'}
+[1.836598] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/velodyne_description.dsv\n'}
+[1.837315] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/ament_index/resource_index/package_run_dependencies/velodyne_description\n'}
+[1.837918] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/ament_index/resource_index/parent_prefix_path/velodyne_description\n'}
+[1.838354] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.sh\n'}
+[1.838788] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/ament_prefix_path.dsv\n'}
+[1.839185] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/path.sh\n'}
+[1.839610] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/environment/path.dsv\n'}
+[1.840000] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.bash\n'}
+[1.840429] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.sh\n'}
+[1.840836] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.zsh\n'}
+[1.841295] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/local_setup.dsv\n'}
+[1.841674] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/package.dsv\n'}
+[1.842288] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/ament_index/resource_index/packages/velodyne_description\n'}
+[1.842850] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig.cmake\n'}
+[1.843167] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/cmake/velodyne_descriptionConfig-version.cmake\n'}
+[1.843603] (velodyne_description) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_description/share/velodyne_description/package.xml\n'}
+[1.848485] (velodyne_description) CommandEnded: {'returncode': 0}
+[1.881002] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.885210] (velodyne_description) JobEnded: {'identifier': 'velodyne_description', 'rc': 0}
+[1.887061] (my_bot) CommandEnded: {'returncode': 0}
+[1.888453] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[1.890155] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/an/ros2_ws/build/my_bot'], 'cwd': '/home/an/ros2_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/my_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.905078] (-) TimerEvent: {}
+[1.908613] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.908965] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/config\n'}
+[1.909371] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[1.909989] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/description\n'}
+[1.910271] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[1.910683] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/description/lidar.xacro\n'}
+[1.911202] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro\n'}
+[1.911649] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[1.912123] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[1.912655] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/launch\n'}
+[1.913201] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py\n'}
+[1.913823] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[1.914348] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/worlds\n'}
+[1.914739] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/worlds/obstacles.world\n'}
+[1.915467] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[1.916552] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[1.917137] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[1.917770] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[1.918170] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[1.918674] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/environment/path.sh\n'}
+[1.919168] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[1.919591] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/local_setup.bash\n'}
+[1.920122] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/local_setup.sh\n'}
+[1.920556] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[1.921010] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[1.921433] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/package.dsv\n'}
+[1.922057] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[1.922585] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[1.922914] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[1.923362] (my_bot) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/my_bot/share/my_bot/package.xml\n'}
+[1.928270] (my_bot) CommandEnded: {'returncode': 0}
+[1.954439] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[2.005253] (-) TimerEvent: {}
+[2.023069] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[2.074717] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[2.105409] (-) TimerEvent: {}
+[2.205853] (-) TimerEvent: {}
+[2.306307] (-) TimerEvent: {}
+[2.406959] (-) TimerEvent: {}
+[2.507404] (-) TimerEvent: {}
+[2.514546] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[2.560246] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.571057] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.585718] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.589000] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.590075] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.603419] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.607537] (-) TimerEvent: {}
+[2.639007] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.707740] (-) TimerEvent: {}
+[2.734279] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.758718] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.782799] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.793652] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.793880] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.803686] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.803947] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.807875] (-) TimerEvent: {}
+[2.813672] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.813899] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.823983] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.824224] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.833884] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.834266] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.844551] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.908033] (-) TimerEvent: {}
+[3.008444] (-) TimerEvent: {}
+[3.089385] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.094206] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[3.095135] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[3.108580] (-) TimerEvent: {}
+[3.143781] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[3.174978] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[3.187568] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[3.208763] (-) TimerEvent: {}
+[3.229321] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[3.308980] (-) TimerEvent: {}
+[3.337735] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[3.352685] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[3.389387] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[3.409165] (-) TimerEvent: {}
+[3.487207] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[3.492167] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.493251] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[3.509300] (-) TimerEvent: {}
+[3.544720] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.558300] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[3.595396] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[3.609495] (-) TimerEvent: {}
+[3.695265] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.700050] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.701146] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[3.701664] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.703197] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.706495] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[3.709640] (-) TimerEvent: {}
+[3.732886] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[3.734084] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[3.738973] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[3.740280] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[3.741142] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.747260] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[3.748319] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[3.809815] (-) TimerEvent: {}
+[3.910282] (-) TimerEvent: {}
+[3.967796] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.989080] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[4.010465] (-) TimerEvent: {}
+[4.026576] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[4.110665] (-) TimerEvent: {}
+[4.126482] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[4.142517] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[4.179864] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[4.210826] (-) TimerEvent: {}
+[4.280149] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[4.281158] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.282100] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.283077] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.291052] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[4.291805] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[4.310994] (-) TimerEvent: {}
+[4.329560] (velodyne_gazebo_plugins) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[4.411169] (-) TimerEvent: {}
+[4.430448] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[4.511345] (-) TimerEvent: {}
+[4.522848] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.535353] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.556762] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.587177] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.611480] (-) TimerEvent: {}
+[4.627649] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.711706] (-) TimerEvent: {}
+[4.734913] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.741279] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.811883] (-) TimerEvent: {}
+[4.912347] (-) TimerEvent: {}
+[4.991985] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.012474] (-) TimerEvent: {}
+[5.056370] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.112694] (-) TimerEvent: {}
+[5.169440] (velodyne_gazebo_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.190892] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.212875] (-) TimerEvent: {}
+[5.313345] (-) TimerEvent: {}
+[5.324172] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[5.413539] (-) TimerEvent: {}
+[5.471545] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.513762] (-) TimerEvent: {}
+[5.614302] (-) TimerEvent: {}
+[5.714760] (-) TimerEvent: {}
+[5.721077] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.814927] (-) TimerEvent: {}
+[5.816187] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[5.830883] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/an/ros2_ws/build/velodyne_gazebo_plugins\n'}
+[5.860123] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[5.861721] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'build'}
+[5.863901] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/an/ros2_ws/build/velodyne_gazebo_plugins', '--', '-j12', '-l12'], 'cwd': '/home/an/ros2_ws/build/velodyne_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_gazebo_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.915103] (-) TimerEvent: {}
+[6.000891] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros_velodyne_laser.dir/src/GazeboRosVelodyneLaser.cpp.o\x1b[0m\n'}
+[6.015261] (-) TimerEvent: {}
+[6.115728] (-) TimerEvent: {}
+[6.216178] (-) TimerEvent: {}
+[6.316683] (-) TimerEvent: {}
+[6.417141] (-) TimerEvent: {}
+[6.517601] (-) TimerEvent: {}
+[6.618083] (-) TimerEvent: {}
+[6.718556] (-) TimerEvent: {}
+[6.819107] (-) TimerEvent: {}
+[6.919650] (-) TimerEvent: {}
+[7.020137] (-) TimerEvent: {}
+[7.120696] (-) TimerEvent: {}
+[7.221191] (-) TimerEvent: {}
+[7.321766] (-) TimerEvent: {}
+[7.422280] (-) TimerEvent: {}
+[7.522738] (-) TimerEvent: {}
+[7.623176] (-) TimerEvent: {}
+[7.723593] (-) TimerEvent: {}
+[7.824206] (-) TimerEvent: {}
+[7.925131] (-) TimerEvent: {}
+[8.025575] (-) TimerEvent: {}
+[8.126096] (-) TimerEvent: {}
+[8.226853] (-) TimerEvent: {}
+[8.327276] (-) TimerEvent: {}
+[8.427735] (-) TimerEvent: {}
+[8.528303] (-) TimerEvent: {}
+[8.629036] (-) TimerEvent: {}
+[8.729550] (-) TimerEvent: {}
+[8.830042] (-) TimerEvent: {}
+[8.930470] (-) TimerEvent: {}
+[9.030960] (-) TimerEvent: {}
+[9.131433] (-) TimerEvent: {}
+[9.231918] (-) TimerEvent: {}
+[9.332411] (-) TimerEvent: {}
+[9.432754] (-) TimerEvent: {}
+[9.533205] (-) TimerEvent: {}
+[9.633656] (-) TimerEvent: {}
+[9.734096] (-) TimerEvent: {}
+[9.834448] (-) TimerEvent: {}
+[9.934889] (-) TimerEvent: {}
+[10.035343] (-) TimerEvent: {}
+[10.135700] (-) TimerEvent: {}
+[10.236009] (-) TimerEvent: {}
+[10.336466] (-) TimerEvent: {}
+[10.436917] (-) TimerEvent: {}
+[10.537333] (-) TimerEvent: {}
+[10.637908] (-) TimerEvent: {}
+[10.738347] (-) TimerEvent: {}
+[10.838838] (-) TimerEvent: {}
+[10.939203] (-) TimerEvent: {}
+[11.039693] (-) TimerEvent: {}
+[11.140132] (-) TimerEvent: {}
+[11.240570] (-) TimerEvent: {}
+[11.340975] (-) TimerEvent: {}
+[11.441391] (-) TimerEvent: {}
+[11.541931] (-) TimerEvent: {}
+[11.642339] (-) TimerEvent: {}
+[11.742803] (-) TimerEvent: {}
+[11.843257] (-) TimerEvent: {}
+[11.943727] (-) TimerEvent: {}
+[12.044152] (-) TimerEvent: {}
+[12.144603] (-) TimerEvent: {}
+[12.245189] (-) TimerEvent: {}
+[12.345610] (-) TimerEvent: {}
+[12.446420] (-) TimerEvent: {}
+[12.547104] (-) TimerEvent: {}
+[12.647508] (-) TimerEvent: {}
+[12.747970] (-) TimerEvent: {}
+[12.848643] (-) TimerEvent: {}
+[12.948985] (-) TimerEvent: {}
+[13.049425] (-) TimerEvent: {}
+[13.149907] (-) TimerEvent: {}
+[13.250393] (-) TimerEvent: {}
+[13.350890] (-) TimerEvent: {}
+[13.451351] (-) TimerEvent: {}
+[13.551803] (-) TimerEvent: {}
+[13.652256] (-) TimerEvent: {}
+[13.752718] (-) TimerEvent: {}
+[13.853176] (-) TimerEvent: {}
+[13.953603] (-) TimerEvent: {}
+[14.053998] (-) TimerEvent: {}
+[14.154305] (-) TimerEvent: {}
+[14.254698] (-) TimerEvent: {}
+[14.355158] (-) TimerEvent: {}
+[14.455569] (-) TimerEvent: {}
+[14.556060] (-) TimerEvent: {}
+[14.656517] (-) TimerEvent: {}
+[14.756967] (-) TimerEvent: {}
+[14.857360] (-) TimerEvent: {}
+[14.958161] (-) TimerEvent: {}
+[15.058651] (-) TimerEvent: {}
+[15.159098] (-) TimerEvent: {}
+[15.259515] (-) TimerEvent: {}
+[15.359884] (-) TimerEvent: {}
+[15.460237] (-) TimerEvent: {}
+[15.560557] (-) TimerEvent: {}
+[15.661148] (-) TimerEvent: {}
+[15.761525] (-) TimerEvent: {}
+[15.861924] (-) TimerEvent: {}
+[15.962335] (-) TimerEvent: {}
+[16.062786] (-) TimerEvent: {}
+[16.163228] (-) TimerEvent: {}
+[16.263580] (-) TimerEvent: {}
+[16.363931] (-) TimerEvent: {}
+[16.464263] (-) TimerEvent: {}
+[16.564598] (-) TimerEvent: {}
+[16.664963] (-) TimerEvent: {}
+[16.765325] (-) TimerEvent: {}
+[16.865697] (-) TimerEvent: {}
+[16.966106] (-) TimerEvent: {}
+[17.066557] (-) TimerEvent: {}
+[17.167009] (-) TimerEvent: {}
+[17.267377] (-) TimerEvent: {}
+[17.367819] (-) TimerEvent: {}
+[17.468143] (-) TimerEvent: {}
+[17.568466] (-) TimerEvent: {}
+[17.668840] (-) TimerEvent: {}
+[17.769244] (-) TimerEvent: {}
+[17.869699] (-) TimerEvent: {}
+[17.970109] (-) TimerEvent: {}
+[18.070577] (-) TimerEvent: {}
+[18.171023] (-) TimerEvent: {}
+[18.271405] (-) TimerEvent: {}
+[18.371897] (-) TimerEvent: {}
+[18.472315] (-) TimerEvent: {}
+[18.572671] (-) TimerEvent: {}
+[18.673058] (-) TimerEvent: {}
+[18.773476] (-) TimerEvent: {}
+[18.873866] (-) TimerEvent: {}
+[18.974278] (-) TimerEvent: {}
+[19.074696] (-) TimerEvent: {}
+[19.175111] (-) TimerEvent: {}
+[19.275437] (-) TimerEvent: {}
+[19.375793] (-) TimerEvent: {}
+[19.476135] (-) TimerEvent: {}
+[19.576507] (-) TimerEvent: {}
+[19.677022] (-) TimerEvent: {}
+[19.777479] (-) TimerEvent: {}
+[19.877924] (-) TimerEvent: {}
+[19.978358] (-) TimerEvent: {}
+[20.078752] (-) TimerEvent: {}
+[20.179129] (-) TimerEvent: {}
+[20.279614] (-) TimerEvent: {}
+[20.380069] (-) TimerEvent: {}
+[20.480429] (-) TimerEvent: {}
+[20.580800] (-) TimerEvent: {}
+[20.681164] (-) TimerEvent: {}
+[20.781539] (-) TimerEvent: {}
+[20.881997] (-) TimerEvent: {}
+[20.982425] (-) TimerEvent: {}
+[21.082865] (-) TimerEvent: {}
+[21.183188] (-) TimerEvent: {}
+[21.283523] (-) TimerEvent: {}
+[21.384207] (-) TimerEvent: {}
+[21.484586] (-) TimerEvent: {}
+[21.585021] (-) TimerEvent: {}
+[21.685481] (-) TimerEvent: {}
+[21.785917] (-) TimerEvent: {}
+[21.886324] (-) TimerEvent: {}
+[21.986735] (-) TimerEvent: {}
+[21.989907] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_ros_velodyne_laser.so\x1b[0m\n'}
+[22.086892] (-) TimerEvent: {}
+[22.187372] (-) TimerEvent: {}
+[22.287830] (-) TimerEvent: {}
+[22.388265] (-) TimerEvent: {}
+[22.488762] (-) TimerEvent: {}
+[22.589151] (-) TimerEvent: {}
+[22.689540] (-) TimerEvent: {}
+[22.789925] (-) TimerEvent: {}
+[22.890255] (-) TimerEvent: {}
+[22.907397] (velodyne_gazebo_plugins) StdoutLine: {'line': b'[100%] Built target gazebo_ros_velodyne_laser\n'}
+[22.922143] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[22.923192] (velodyne_gazebo_plugins) JobProgress: {'identifier': 'velodyne_gazebo_plugins', 'progress': 'install'}
+[22.924193] (velodyne_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/an/ros2_ws/build/velodyne_gazebo_plugins'], 'cwd': '/home/an/ros2_ws/build/velodyne_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_gazebo_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.932348] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.932698] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so\n'}
+[22.937278] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Set runtime path of "/home/an/ros2_ws/install/velodyne_gazebo_plugins/lib/libgazebo_ros_velodyne_laser.so" to ""\n'}
+[22.937529] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins\n'}
+[22.937589] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.hpp\n'}
+[22.937824] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.sh\n'}
+[22.937988] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/library_path.dsv\n'}
+[22.938228] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/velodyne_gazebo_plugins\n'}
+[22.938421] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/velodyne_gazebo_plugins\n'}
+[22.938579] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.sh\n'}
+[22.938908] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/ament_prefix_path.dsv\n'}
+[22.939064] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.sh\n'}
+[22.939239] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/environment/path.dsv\n'}
+[22.939360] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.bash\n'}
+[22.939512] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.sh\n'}
+[22.939691] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.zsh\n'}
+[22.939835] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/local_setup.dsv\n'}
+[22.940020] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv\n'}
+[22.940223] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/ament_index/resource_index/packages/velodyne_gazebo_plugins\n'}
+[22.940400] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.940551] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.940731] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.940883] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig.cmake\n'}
+[22.941002] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/cmake/velodyne_gazebo_pluginsConfig-version.cmake\n'}
+[22.941144] (velodyne_gazebo_plugins) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.xml\n'}
+[22.944063] (velodyne_gazebo_plugins) CommandEnded: {'returncode': 0}
+[22.957178] (velodyne_gazebo_plugins) JobEnded: {'identifier': 'velodyne_gazebo_plugins', 'rc': 0}
+[22.958879] (velodyne_simulator) JobStarted: {'identifier': 'velodyne_simulator'}
+[22.967243] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'cmake'}
+[22.968225] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '/home/an/ros2_ws/src/velodyne_simulator/velodyne_simulator', '-DCMAKE_INSTALL_PREFIX=/home/an/ros2_ws/install/velodyne_simulator'], 'cwd': '/home/an/ros2_ws/build/velodyne_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins:/home/an/ros2_ws/install/velodyne_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_simulator'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins:/home/an/ros2_ws/install/velodyne_description:/opt/ros/humble')]), 'shell': False}
+[22.990418] (-) TimerEvent: {}
+[23.041370] (velodyne_simulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[23.090611] (-) TimerEvent: {}
+[23.108360] (velodyne_simulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[23.120680] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[23.190752] (-) TimerEvent: {}
+[23.206847] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[23.213412] (velodyne_simulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[23.213859] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[23.214340] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[23.217449] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[23.290926] (-) TimerEvent: {}
+[23.308340] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[23.314963] (velodyne_simulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[23.315256] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[23.315594] (velodyne_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[23.318272] (velodyne_simulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[23.391081] (-) TimerEvent: {}
+[23.463855] (velodyne_simulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[23.491240] (-) TimerEvent: {}
+[23.591662] (-) TimerEvent: {}
+[23.608603] (velodyne_simulator) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.611323] (velodyne_simulator) StdoutLine: {'line': b'-- Generating done\n'}
+[23.612948] (velodyne_simulator) StdoutLine: {'line': b'-- Build files have been written to: /home/an/ros2_ws/build/velodyne_simulator\n'}
+[23.617583] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[23.618539] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'build'}
+[23.619476] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/an/ros2_ws/build/velodyne_simulator', '--', '-j12', '-l12'], 'cwd': '/home/an/ros2_ws/build/velodyne_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins:/home/an/ros2_ws/install/velodyne_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_simulator'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins:/home/an/ros2_ws/install/velodyne_description:/opt/ros/humble')]), 'shell': False}
+[23.665950] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[23.666686] (velodyne_simulator) JobProgress: {'identifier': 'velodyne_simulator', 'progress': 'install'}
+[23.667893] (velodyne_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/an/ros2_ws/build/velodyne_simulator'], 'cwd': '/home/an/ros2_ws/build/velodyne_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'an'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/an'), ('OLDPWD', '/home/an/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '1649'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'an'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'an'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/an-Aspire-A715-42G:@/tmp/.ICE-unix/1441,unix/an-Aspire-A715-42G:/tmp/.ICE-unix/1441'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d0a94ea_2c98_47ee_87a3_fdf8244df089'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1Z4P52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins:/home/an/ros2_ws/install/velodyne_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/an/ros2_ws/build/velodyne_simulator'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/an/ros2_ws/install/velodyne_gazebo_plugins:/home/an/ros2_ws/install/velodyne_description:/opt/ros/humble')]), 'shell': False}
+[23.676494] (velodyne_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.676994] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/ament_index/resource_index/package_run_dependencies/velodyne_simulator\n'}
+[23.677276] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/ament_index/resource_index/parent_prefix_path/velodyne_simulator\n'}
+[23.677439] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/environment/ament_prefix_path.sh\n'}
+[23.677744] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/environment/ament_prefix_path.dsv\n'}
+[23.677998] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/environment/path.sh\n'}
+[23.678163] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/environment/path.dsv\n'}
+[23.678312] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.bash\n'}
+[23.678458] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.sh\n'}
+[23.678698] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.zsh\n'}
+[23.678760] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/local_setup.dsv\n'}
+[23.678811] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/package.dsv\n'}
+[23.678862] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/ament_index/resource_index/packages/velodyne_simulator\n'}
+[23.678912] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/cmake/velodyne_simulatorConfig.cmake\n'}
+[23.679012] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/cmake/velodyne_simulatorConfig-version.cmake\n'}
+[23.679067] (velodyne_simulator) StdoutLine: {'line': b'-- Installing: /home/an/ros2_ws/install/velodyne_simulator/share/velodyne_simulator/package.xml\n'}
+[23.681864] (velodyne_simulator) CommandEnded: {'returncode': 0}
+[23.691772] (velodyne_simulator) JobEnded: {'identifier': 'velodyne_simulator', 'rc': 0}
+[23.692748] (-) TimerEvent: {}
+[23.692870] (-) EventReactorShutdown: {}

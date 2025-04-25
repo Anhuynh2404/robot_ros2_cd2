@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating robotcd_pkg.egg-info
+writing robotcd_pkg.egg-info/PKG-INFO
+writing dependency_links to robotcd_pkg.egg-info/dependency_links.txt
+writing entry points to robotcd_pkg.egg-info/entry_points.txt
+writing requirements to robotcd_pkg.egg-info/requires.txt
+writing top-level names to robotcd_pkg.egg-info/top_level.txt
+writing manifest file 'robotcd_pkg.egg-info/SOURCES.txt'
+reading manifest file 'robotcd_pkg.egg-info/SOURCES.txt'
+writing manifest file 'robotcd_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/an/ros2_ws/install/robotcd_pkg/lib/python3.10/site-packages/robotcd-pkg.egg-link (link to .)
+
+Installed /home/an/ros2_ws/build/robotcd_pkg
+running symlink_data
+creating /home/an/ros2_ws/install/robotcd_pkg/share/ament_index
+creating /home/an/ros2_ws/install/robotcd_pkg/share/ament_index/resource_index
+creating /home/an/ros2_ws/install/robotcd_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/an/ros2_ws/build/robotcd_pkg/resource/robotcd_pkg -> /home/an/ros2_ws/install/robotcd_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/an/ros2_ws/build/robotcd_pkg/package.xml -> /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg
+creating /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg/launch
+symbolically linking /home/an/ros2_ws/build/robotcd_pkg/launch/my_robot_world.launch.py -> /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg/launch
+creating /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg/worlds
+symbolically linking /home/an/ros2_ws/build/robotcd_pkg/worlds/house.world -> /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg/worlds
+creating /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg/models
+symbolically linking /home/an/ros2_ws/build/robotcd_pkg/models/model.sdf -> /home/an/ros2_ws/install/robotcd_pkg/share/robotcd_pkg/models
