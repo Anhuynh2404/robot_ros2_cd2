@@ -54,6 +54,7 @@ Bây giờ  đã sẵn sàng để khởi động mô phỏng!
 * Cửa sổ Gazebo sẽ hiển thị bản đồ từ file `house.world` của bạn.
 * Sau một vài giây, robot từ file `model.sdf` sẽ xuất hiện trong Gazebo tại vị trí (`-x`, `-y`, `-z`, `-Y`) bạn đã chỉ định trong launch file.
 * **Kiểm tra ROS 2 Topics:** Mở một terminal **khác**, source workspace (`source ~/ros2_ws/install/setup.bash`) và chạy `ros2 topic list`. Bạn sẽ thấy các topic cơ bản (`/clock`, `/parameter_events`, `/rosout`) và quan trọng là các topic do **plugin ROS trong file SDF của robot** tạo ra (ví dụ: `/odom`, `/scan`, `/cmd_vel`, `/camera/image_raw`, `/tf`, `/tf_static`...). Sự xuất hiện của các topic này xác nhận tích hợp ROS 2 đang hoạt động.
-
+**🚨 Lỗi**: Hiện đang bị lỗi robot bị quay tròn khi đưa vào world
+  [Xem video](https://drive.google.com/file/d/18rGJSNRQNLvDDohoOOW-p8AeP6IT8ddi/view?usp=drive_link)
 ## **Bắt đầu Tự động hóa với ROS 2**
 
