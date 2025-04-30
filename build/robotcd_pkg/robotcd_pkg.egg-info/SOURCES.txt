@@ -13,3 +13,4 @@ robotcd_pkg.egg-info/requires.txt
 robotcd_pkg.egg-info/top_level.txt
 robotcd_pkg.egg-info/zip-safe
 worlds/house.world
+worlds/warehouse.world
